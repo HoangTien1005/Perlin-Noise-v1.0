@@ -26,10 +26,10 @@ function draw() {
     for (var x = 0; x < WIDTH; x++) {
       var index = (x + y * WIDTH) * 4;
       var rand = noise(xoff, yoff) * 255;
-      pixels[index + 0] = rand;
-      pixels[index + 1] = rand;
-      pixels[index + 2] = rand;
-      pixels[index + 3] = 255;
+      pixels[index + 0] = rand;     //change this value to x, y or anything to get the different colors
+      pixels[index + 1] = rand;     //change this value to x, y or anything to get the different colors
+      pixels[index + 2] = rand;     //change this value to x, y or anything to get the different colors
+      pixels[index + 3] = 255;      //change this value to x, y or anything to get the different colors
 
       xoff += inc;
     }
